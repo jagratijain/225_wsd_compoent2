@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define the category element -->
+  <xs:element name="category" type="xs:string"/>
+
+  <!-- Define the joke element -->
+  <xs:element name="joke" type="xs:string"/>
+
+  <!-- Define the jokes element as a sequence of category and joke -->
+  <xs:element name="jokes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="category"/>
+        <xs:element ref="joke"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
